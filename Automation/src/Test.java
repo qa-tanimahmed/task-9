@@ -33,7 +33,7 @@ public class Test {
 
 		capabilities.setCapability("platformName", "android");
 		capabilities.setCapability("appium:deviceName", "deviceName");
-		capabilities.setCapability("appium:app", "src/nopstationCart_4.40.apk");
+		capabilities.setCapability("appium:app", "C:\\Users\\nopstationCart_4.40.apk"); //raw apk path
 		String path = "src/test.csv";
 		String line = "";
 
@@ -216,11 +216,11 @@ public class Test {
 		Thread.sleep(5000);
 		WebElement element = (WebElement) driver.findElement(ById.id("com.nopstation.nopcommerce.nopstationcart:id/md_text_message"));
 		String elText = element.getText();
-		System.out.println(element);
+		System.out.println(element); //bug
 		
 		System.out.println("Scene Complete");
 
-		//read com.nopstation.nopcommerce.nopstationcart:id/md_text_message
+	
 
 	}
 	//test
